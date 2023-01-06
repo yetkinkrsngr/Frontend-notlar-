@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* kardeş secici
+      h3 ~ p {
+        color: red;
+      }*/
+      /* bitişik secici 
+      h3 + p {
+        color: red;
+      }
+      */
+      h3 + p,
+      h2 + p {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <!--
+        sibling: kardeş seçiçi: kardes1 ~ kardes2 aynı seviyedeki seçilen tüm elementleri seçer   
+                 bitişik kardeş kardeş1+kardeş2 kardeş bir içerindeki bir altındaki bulur ve değiştiri
+        multiple çoklu secici: 3. , ile ayrılan bölge coklu secicidir.
+    -->
+    <h2>h2 baslık</h2>
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam,
+      laboriosam.
+    </p>
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam,
+      laboriosam.
+    </p>
+
+    <h3>h3 baslık</h3>
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam,
+      laboriosam.
+    </p>
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam,
+      laboriosam.
+    </p>
+
+    <h3>h3 baslık</h3>
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam,
+      laboriosam.
+    </p>
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam,
+      laboriosam.
+    </p>
+
+    <h3>h3 baslık</h3>
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam,
+      laboriosam.
+    </p>
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam,
+      laboriosam.
+    </p>
+  </body>
+</html>

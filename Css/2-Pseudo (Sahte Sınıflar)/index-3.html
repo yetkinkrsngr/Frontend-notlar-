@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      input:focus {
+        color: red;
+      }
+      input:checked {
+        width: 15px;
+        height: 15px;
+      }
+      input:disabled {
+        background-color: blue;
+      }
+      input:enabled {
+        background-color: antiquewhite;
+      }
+    </style>
+  </head>
+  <body>
+    <!--  
+        focus: form içindeki tıklandığğında uygulanır
+        checked: tag secildiğinde uygulanan still
+        disable: etkin olmayan stillle verilir 
+        enable:etkin olan tüm etiketler
+     -->
+
+    <form>
+      <h3>Kişisel bilgiler</h3>
+      <label for="numara">Numaranız: </label><br />
+      <input type="text" name="numara" disabled /><br />
+      <label for="adiniz">Adınız : </label><br />
+      <input type="text" name="adiniz" value="ömer" /><br />
+      <label for="soyadiniz">Soyadınız : </label><br />
+      <input type="text" name="soyadiniz" /><br />
+
+      <h3>Spor</h3>
+      <label
+        >Futbol
+        <input type="checkbox" />
+      </label>
+      <br />
+      <label>Basketbol <input type="checkbox" /> </label><br />
+      <label>Voleybol <input type="checkbox" /> </label><br />
+      <label>Yüzme <input type="checkbox" /> </label><br />
+      <h3>Cinsiyetiniz</h3>
+      <label
+        >Kadın
+        <input type="radio" name="radio" />
+        <span class="checkmark"></span>
+      </label>
+      <label
+        >Erkek
+        <input type="radio" name="radio" />
+        <span class="checkmark"></span>
+      </label>
+    </form>
+  </body>
+</html>

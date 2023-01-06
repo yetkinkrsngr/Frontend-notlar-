@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* li:nth-child(odd) {
+        color: red;
+      } */
+      /* li:nth-child(even) {
+        color: blue;
+      } */
+      li:nth-child(2n-3) {
+        color: red;
+      }
+      p:nth-last-child(odd) {
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 
+        nth-child: nth-child, html elementlerini belirli bir sıraya göre seçe bilmemizi sağlar. 4. liste elemanı, 3. div gibi
+     -->
+
+    <h3>Başlık</h3>
+    <ul>
+      <li>Lorem.</li>
+      <li>Recusandae.</li>
+      <li>Quibusdam?</li>
+      <li>Nisi!</li>
+      <li>Dolorum!</li>
+      <li>Eaque?</li>
+      <li>Eius!</li>
+      <li>Enim?</li>
+      <li>Porro.</li>
+      <li>Quasi?</li>
+    </ul>
+    <div>
+      <h3>Başlık H3</h3>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+      <div>deneme div</div>
+      <p>Lorem ipsum dolor sit amet.</p>
+      <h4>başlık h4</h4>
+      <p>Lorem, ipsum dolor.</p>
+    </div>
+  </body>
+</html>

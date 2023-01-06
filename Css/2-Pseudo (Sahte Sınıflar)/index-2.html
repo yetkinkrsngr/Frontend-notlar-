@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      /*li ye kırmızı li harci tüm etiketlere mavi verdik */
+      /*
+      li {
+        color: red;
+      }
+      :not(li) {
+        color: blue;
+      }
+      */
+      a:lang(tr) {
+        color: red;
+      }
+      :root {
+        background: orange;
+      }
+      /* :empty {
+        width: 20px;
+        height: 20px;
+        background: yellow;
+      } */
+      :target {
+        background: red;
+        /* bu çok işe yarar..... */
+      }
+    </style>
+  </head>
+  <body>
+    <!--
+        not(): belirtilen tag harici diğer tüm etiketlere etki eder. 
+        lang(): tag içindeki lang almışlara etki eder 
+        root: kök elemana etki etmek için kullanılır.
+        empty:boş olan etikete uygulanır 
+        target: target verdiğimiz yere uygulanmasını istediğimiz target sınıfı mesela 
+            #omer adlı linke tıkladğımızda omer adındaki ul liste 
+            değişiklik yapmak gibi
+    -->
+    <a href="#">Türkçe</a>
+    <a href="#">Almanca</a>
+    <a href="#">İngilizce</a>
+
+    <div></div>
+    <a href="#omer" class="baglantı" lang="tr">Ömer'in verdiği eğitimler</a>
+    <a href="#yetkin" class="baglantı" lang="en">Yetkin'in verdiği eğitimler</a>
+
+    <ul id="omer">
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JS</li>
+    </ul>
+
+    <p></p>
+    <ul id="yetkin">
+      <li>Adwords</li>
+      <li>Facebook</li>
+      <li>Instagram</li>
+    </ul>
+  </body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      p:first-child {
+        color: blue;
+      }
+      p:last-child {
+        color: red;
+      }
+      p:first-of-type {
+        background-color: aquamarine;
+      }
+      p:last-of-type {
+        background-color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 
+        fist-child:ilk elemana erişir.
+        last-child:son elemana erişir.
+        first-of-type: ilk türe erişir
+        last-of-type:son türe erişir
+
+        child ile type araşındaki fark type olarak bir çocuk olmasına gerek yok.
+
+    -->
+    <div>
+      <ul>
+        <li>js</li>
+        <li>php</li>
+        <li>html</li>
+        <li>css</li>
+      </ul>
+    </div>
+    <div>
+      <p>Lorem ipsum dolor sit.</p>
+      <p>Molestiae necessitatibus repellendus nesciunt?</p>
+      <p>Molestiae consectetur adipisci voluptas?</p>
+      <p>Saepe odit assumenda ea?</p>
+      <p>Expedita dignissimos deserunt fuga.</p>
+    </div>
+    <div>
+      <p>Lorem ipsum dolor sit.</p>
+      <p>Molestiae necessitatibus repellendus nesciunt?</p>
+      <p>Molestiae consectetur adipisci voluptas?</p>
+      <p>Saepe odit assumenda ea?</p>
+      <p>Expedita dignissimos deserunt fuga.</p>
+    </div>
+    <p>Lorem, ipsum dolor.</p>
+    <p>Inventore, fuga facere.</p>
+    <p>Ex, voluptatibus dolores.</p>
+  </body>
+</html>

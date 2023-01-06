@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* input:required {
+        color: red;
+      }
+      input[type="text"] {
+        color: blue;
+      }
+      input:valid {
+        color: green;
+      } */
+      /* input[type="email"]:valid {
+        color: blue;
+      }
+      input[type="email"]:invalid {
+        color: red;
+      } */
+      input[type="number"]:in-range {
+        color: green;
+        background-color: aqua;
+      }
+      input[type="number"]:out-of-range {
+        color: red;
+        background-color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <!--   
+     required:Belirtilen HTML elementine bilgi girisi zorunlu oldugunda stil tanimlar.
+     optional:Belirtilen HTML elementine bilgi girisi opsiyonel oldugunda stil tanimlar.
+     valid:Belirtilen HTML elementine bilgi girisi gecerli bir deger oldugunda stil tanimlar.
+     invalid :Belirtilen HTML elementine bilgi girisi gecersiz bir deger oldugunda stil tanimlar.
+     in-range:Belirtilen HTML elementi bilgi girisi belirtilen araliklar dahilinde bir deger oldugunda stil tanimlar.
+     out-of-range:Belirtilen HTML elementi bilgi girisi belirtilen araliklar disinda bir deger oldugunda stil tanimlar.
+ -->
+
+    <form action="">
+      <h3>Kisisel Bilgiler</h3>
+      <label for="adiniz">adiniz:</label>
+      <input type="text" name="adiniz" required /><br />
+      <label for="soyadiniz">Soyadiniz</label>
+
+      <input type="text" name="soyadiniz" /><br />
+      <label for="email">E-Posta:</label>
+
+      <input type="email" name="email" /><br />
+      <label for="yas">Yasin1z:</label>
+
+      <input type="number" name="yas" min="10" max="30" /><br />
+      <input type="submit" value="Gönder" />
+    </form>
+  </body>
+</html>
