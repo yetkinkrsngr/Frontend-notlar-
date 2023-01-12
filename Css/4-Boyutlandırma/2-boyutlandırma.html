@@ -6,21 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
       div,
       p {
         background-color: red;
-        width: 500px;
+        height: 500px;
       }
       span {
         background-color: blue;
-        width: 500px;
+        height: 500px;
       }
       .miras {
-        width: 50%;
+        height: 50%;
         background-color: yellow;
       }
       .miras2 {
-        width: inherit;
+        height: inherit;
         background-color: red;
       }
     </style>
@@ -33,18 +38,18 @@
     <div>Lorem, ipsum dolor.</div>
     <div><span>Lorem, ipsum dolor.</span></div>
     <!-- 
-  mesela widht 50% dediğimiz için yer alınan alanın yüzdesi inherit için kullanmabiliriz.
+  mesela height 50% dediğimiz için yer alınan alanın yüzdesi inherit için kullanmabiliriz.
  -->
     <div class="miras"><p class="miras2">Lorem ipsum dolor sit.</p></div>
     <div>
-      <p style="width: 500px; max-width: 600px; background-color: aqua">
+      <p style="height: 500px; max-height: 600px; background-color: aqua">
         dene dene
       </p>
     </div>
     <!-- 
-        max-widht ve min-widht ise genişlik alanının ne kadar maximum ve ne kadar minimum olması gerektiğidir.
+        max-height ve min-height ise genişlik alanının ne kadar maximum ve ne kadar minimum olması gerektiğidir.
        -->
-    <div style="max-width: 1200px; min-width: 800px; background-color: brown">
+    <div style="max-height: 1200px; min-height: 800px; background-color: brown">
       deneme
     </div>
   </body>
