@@ -4,3 +4,4 @@
 5-Arkaplan İşlemleri (background-attachment) – 5
 6-background-origin
 7-background-clip
+9-linear-gradient
