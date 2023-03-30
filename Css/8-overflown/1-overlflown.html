@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .auto{
+            width: 300px;
+            height: 200px;
+            border: 1px solid black;
+            overflow: auto;
+        }
+        .scroll{
+            width: 300px;
+            height: 200px;
+            border: 1px solid black;
+            overflow:scroll;
+        }
+        .hidden{
+            width: 300px;
+            height: 200px;
+            border: 1px solid black;
+            overflow:hidden;
+        }
+        .float{
+            float: left;
+            margin-left: 15px;
+        }
+        .clearfix{
+            clear: both;
+        }
+        .scroll-example{
+            width: 200px;
+            height: 100px;
+            overflow: scroll;
+        }
+        .auto-example{
+            width: 200px;
+            height: 100px;
+            overflow: auto;
+        }
+    </style>
+</head>
+<body>
+    <!-- taşma sınırından itibaren çerçeve içine koyar  -->
+    <div class="float">
+        <h2>overflown auto özelliği</h2>
+        <p class="auto">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum magni aspernatur aut accusantium deserunt dignissimos consequatur impedit recusandae doloribus ducimus, molestiae minus cupiditate incidunt ea cumque hic nostrum dicta autem?
+        Sunt nesciunt fugiat laboriosam velit voluptatibus rerum repellendus, illo fugit? Tempora officia labore inventore deserunt, accusamus praesentium nam dolor, perferendis, quis quasi fugit explicabo sunt voluptatum expedita? Inventore, amet iusto!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, et quas. Nostrum deserunt esse consequatur perspiciatis molestias? Soluta facere at quia minus ad, provident quam ducimus possimus, iste enim repellendus!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum fugiat incidunt quas! Eveniet sed, assumenda ipsam debitis quae corrupti voluptatem, laudantium asperiores, ratione veritatis veniam explicabo quidem vero itaque neque.
+        </p>
+    </div>
+    <!-- taşma yaşanmadan scroolluk çerçeve yapar -->
+    <div class="float">
+        <h2>overflown scroll özelliği</h2>
+        <p class="scroll">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum magni aspernatur aut accusantium deserunt dignissimos consequatur impedit recusandae doloribus ducimus, molestiae minus cupiditate incidunt ea cumque hic nostrum dicta autem?
+        Sunt nesciunt fugiat laboriosam velit voluptatibus rerum repellendus, illo fugit? Tempora officia labore inventore deserunt, accusamus praesentium nam dolor, perferendis, quis quasi fugit explicabo sunt voluptatum expedita? Inventore, amet iusto!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, et quas. Nostrum deserunt esse consequatur perspiciatis molestias? Soluta facere at quia minus ad, provident quam ducimus possimus, iste enim repellendus!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum fugiat incidunt quas! Eveniet sed, assumenda ipsam debitis quae corrupti voluptatem, laudantium asperiores, ratione veritatis veniam explicabo quidem vero itaque neque.
+        </p>
+    </div>
+    <!-- taşmadan itibaren göstermez -->
+    <div class="float">
+        <h2>overflown hidden özelliği</h2>
+        <p class="hidden">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum magni aspernatur aut accusantium deserunt dignissimos consequatur impedit recusandae doloribus ducimus, molestiae minus cupiditate incidunt ea cumque hic nostrum dicta autem?
+        Sunt nesciunt fugiat laboriosam velit voluptatibus rerum repellendus, illo fugit? Tempora officia labore inventore deserunt, accusamus praesentium nam dolor, perferendis, quis quasi fugit explicabo sunt voluptatum expedita? Inventore, amet iusto!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, et quas. Nostrum deserunt esse consequatur perspiciatis molestias? Soluta facere at quia minus ad, provident quam ducimus possimus, iste enim repellendus!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum fugiat incidunt quas! Eveniet sed, assumenda ipsam debitis quae corrupti voluptatem, laudantium asperiores, ratione veritatis veniam explicabo quidem vero itaque neque.
+        </p>
+    </div>
+    <div class="clearfix"></div>
+    <div style="width: 100%;border:1px solid black">deneme</div>
+    <div>
+        <p class="scroll-example">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur, explicabo.</p>
+        <p class="auto-example">Lorem ipsum dolor sit amet.</p>
+    </div>
+</body>
+</html>
