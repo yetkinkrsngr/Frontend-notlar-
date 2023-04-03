@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .inline{
+            /* block olan elementleri inline yaptık ve widht yemedi */
+            display: inline;
+            width: 140px;
+            border: 1px solid black;
+        }
+        .block{ 
+            /*  a tagları block level oldu */
+            display: block;
+            width: 150px;
+            
+            text-decoration: underline wavy 4px #0066fe;
+            
+            /* text-decoration: underline;
+            text-decoration-style:wavy ;
+            text-decoration-color: #0066fe;
+            text-underline-offset:4px ; */
+
+            margin-top: 12px;
+            border: 1px solid black;
+            color: aquamarine;
+
+        }
+        .inline-block{
+            /*  hiç fark etmez ne versen inline yapar block gibi widht height yedirir */
+            display: inline-block;
+            width: 150px;
+            border: 1px solid black;
+
+        }
+        .görünmez-adam{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h2>inline</h2>
+    <div>
+        <div class="inline">lorem1</div>
+        <div class="inline">lorem2</div>
+    </div>
+    <hr>
+    <h2>block</h2>
+    <div>
+        <a href="" class="block">Lorem.</a>
+        <a href="" class="block">Lorem.</a>
+    </div>
+    <hr>
+    <h2>inline block</h2>
+    <div class="inline-block">deneme</div>
+    <a href="" class="inline-block">deneme</a>
+    <div class="inline-block">deneme</div>
+    <hr>
+    <h2>display none</h2>
+    <div class="görünmez-adam">görünmez adam </div>
+    <p>not : display none bize komple yok eder. visible hidden verirsen pixsel olarak işgal eder</p>
+    <p style="visibility: hidden;"> isgall</p>
+    <p>mesele bir yukarıda isgal etmeyen display none ve isgal eden visible hidden var</p>
+</body>
+</html>
