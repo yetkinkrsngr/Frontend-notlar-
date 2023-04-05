@@ -4,3 +4,4 @@
 2. list-item ve tablo işlemleri.
 3. visibility
 4. float ve clear ozellikleri.
+5. box-sizing ve box-shodow.
